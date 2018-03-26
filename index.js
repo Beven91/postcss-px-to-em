@@ -34,7 +34,7 @@ module.exports = postcss.plugin('postcss-px-to-em', function (opts) {
   };
 
   return function (css) {
-    css.eachInside(function(node) {
+    css.walk(function(node) {
       if (node.type === 'decl') {
         node.value = convert(node._value ? node._value.raw : node.value);
       }
