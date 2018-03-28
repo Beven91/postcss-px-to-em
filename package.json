@@ -1,6 +1,6 @@
 {
   "name": "postcss-pix-to-em",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostCSS plugin to convert all px measurements to em",
   "keywords": [
     "postcss",

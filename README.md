@@ -53,7 +53,10 @@ Plug it into your PostCSS configuration.
 ```js
 var options = {
   base: 16, // Base font size; 16px by default
+  minPixelValue:0,//   (Number) Set the minimum pixel value to replace.
 };
+
+//minPixelValue:2 dont convert 1px to em
 
 // Options may be supplied as the first argument, but are not required.
 postcss([require('postcss-px-to-em')(options)])
